@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pop Up</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<button class="open">Click me !</button>
+	<div class="popup">
+		<div class="popup__background"></div>
+		<div class="popup__box">
+			<img src="img/close.svg" alt="" class="popup__box__close">
+			<img src="img/warning.svg" alt="" class="popup__box__warning">
+			<p class="popup__box__text">Are you sure you want to uninstall the Shazam app ?</p>
+			<button class="button--cancel">Cancel</button>
+			<button class="button--uninstall">Uninstall</button>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function () {
+
+			/* Open fade in */
+			$('.open').click( function () {
+				$('.popup__background').fadeIn();
+				$('.popup__box').fadeIn();
+				return false;
+			});
+
+			/* Close (.svg) fade out */
+			$('.popup__box__close').click( function () {
+				$('.popup__background').fadeOut();
+				$('.popup__box').fadeOut();
+				return false;
+			});
+
+			/* Close (background) fade out */
+			$('.popup__background').click( function () {
+				$('.popup__background').fadeOut();
+				$('.popup__box').fadeOut();
+				return false;
+			});
+
+			/* Close (button - cancel) fade out */
+			$('.button--cancel').click( function () {
+				$('.popup__background').fadeOut();
+				$('.popup__box').fadeOut();
+				return false;
+			});
+
+			/* Alert - "Done" */
+			$('.button--uninstall').click(function () {
+				alert('Done !');
+			})
+		});
+	</script>
+</body>
+</html>
