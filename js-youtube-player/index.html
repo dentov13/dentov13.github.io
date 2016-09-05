@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS YouTube player</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://use.fontawesome.com/8cbb928ad3.js"></script>
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
+	<script src="js/player.js"></script>
+	</head>
+<body>
+	<div class="wrapper">
+		<div id="player"></div>
+		<div class="panel">
+			<button id="play" onclick="player.playVideo();"><i class="fa fa-play fa-2x" aria-hidden="true"></i></button>
+			<button id="pause" onclick="player.pauseVideo();"><i class="fa fa-pause fa-2x" aria-hidden="true"></i></button>
+			<div id="time">00:00</div>
+			<div id="line" onclick="progress (event);">
+				<div class="viewed"></div>
+				<div id="fader" onclick="alert('fader');"></div>
+			</div>
+			<button id="volume" onclick="editVolume();"><i class="fa fa-volume-up fa-2x" aria-hidden="true"></i></button>
+			<button id="full" onclick="playFullscreen();"><i class="fa fa-expand fa-2x" aria-hidden="true"></i></button>
+		</div>
+	</div>
+</body>
+</html>
