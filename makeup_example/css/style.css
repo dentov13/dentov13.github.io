@@ -74,7 +74,7 @@ a:visited {
   align-items: center;
   width: 99vw;
   height: 8%;
-  padding: 2% 0 0 4%;
+  padding: 2% 5% 0 7%;
 }
 
 .nav-logo {
@@ -139,7 +139,8 @@ a:visited {
 
 /* ---------- Header ---------- */
 .header {
-  background: url("../img/header_bg.png") no-repeat 50% 25%;
+  background: url("../img/header_bg.png") no-repeat;
+  background-position: 200px 0;
   height: 650px;
 }
 
@@ -147,7 +148,7 @@ a:visited {
   display: flex-inline;
   height: 90%;
   width: 40%;
-  padding: 10% 0 0 4%;
+  padding: 10% 0 0 7%;
 }
 
 .header-title {
