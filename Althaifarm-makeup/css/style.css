@@ -207,6 +207,7 @@ a.nav-logo__link:before {
   font-size: 62px;
   font-weight: 700;
   line-height: 52px;
+  margin: 15px 0 15px 0;
 }
 
 .header-subtitle {
@@ -227,6 +228,7 @@ a.nav-logo__link:before {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  justify-content: space-between;
 }
 
 .main-options {
@@ -321,7 +323,6 @@ a.nav-logo__link:before {
   content: "";
 }
 
-
 /* ---------- Main Order Header ---------- */
 
 .main-order {
@@ -400,7 +401,7 @@ a.nav-logo__link:before {
   top: 0px;
   left: 0px;
   color: #ffde00;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
@@ -417,10 +418,10 @@ a.nav-logo__link:before {
   flex: 35%;
   color: #ffde00;
   line-height: 30px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
-  text-align: center;
   font-style: italic;
+  text-align: center;
 }
 
 .main-order__price-sale:before {
