@@ -283,8 +283,8 @@ body {
 
 /* ---------- Recalls ---------- */
 .section-recalls {
-  width: 80%;
-  margin: 0 10%;
+  width: 90%;
+  margin: 0 5%;
 }
 
 .section-recalls__wrapper {
@@ -303,7 +303,7 @@ body {
 .recall {
   width: 33vw;
   flex: 33%;
-  margin: 2% 5% 0% 8%;
+  margin-right: 2%;
 }
 
 .recall__quotes {
@@ -811,12 +811,12 @@ body {
     height: 33px;
   }
   .wrapper {
-    width: 100%;
-    margin: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .nav-menu__item {
-    margin-right: 10px;
-    font-size: 0.4em;
+    margin-right: 5px;
+    font-size: 7px;
     font-weight: 900;
   }
   .nav-button {
@@ -836,6 +836,9 @@ body {
     font-size: 7px;
     margin-top: 0;
   }
+  .header__content-wrapper {
+    padding-top: 0;
+  }
   .header-button {
     margin: 5% 0 0 0;
     width: 100px;
@@ -851,24 +854,30 @@ body {
     font-size: 7px;
   }
   .header-title {
-    margin-bottom: 5px;
     font-size: 0.9em;
   }
   .header-text {
     font-size: 0.5em;
     line-height: 1.7;
   }
-  .header__content-wrapper .mini-separator {
-    margin: 5px 0 10px 0;
-  }
   .section-topic {
     padding: 25px 0 25px 0;
-}
+  }
   .section-topic__title {
     font-size: 23px;
+    margin-bottom: 0;
+  }
+  .mini-separator {
+    margin: 0 0 10px 0;
   }
   .section-topic__text {
     font-size: 14px;
+  }
+  .section-thumbnails {
+    margin-bottom: 25px;
+  }
+  .thumbnail {
+    margin-top: 20px;
   }
   .thumbnail__icon img {
     width: 25px;
@@ -897,7 +906,7 @@ body {
   }
   .recall {
     width: 1%;
-    margin: 2% 4% 0% 6%;
+    margin-right: 2%;
   }
   .recall__text {
     font-size: 0.4em;
@@ -913,12 +922,16 @@ body {
     height: 585px;
   }
   .mail-form__input {
-    width: 381px;
+    width: 250px;
     margin: 0 auto;
     margin-top: 0;
   }
   .mail-form__input-item {
     font-size: 14px;
+    max-width: 250px;
+  }
+  .mail-form__input-item-shape img {
+    width: 250px;
   }
   .mail-form__textarea-title {
     font-size: 13px;
@@ -927,9 +940,15 @@ body {
   .mail-form__textarea {
     margin: 0 auto;
   }
+  .mail-form__textarea-text {
+    width: 250px;
+  }
   .mail-form__dropdown {
     margin: 0 auto;
     margin-bottom: 30px;
+  }
+  .mail-form__dropdown-btn {
+    width: 250px;
   }
   .mail-form__dropdown-btn-text {
     text-align: center;
@@ -937,6 +956,10 @@ body {
   }
   .mail-form__dropdown-form {
     z-index: 1;
+    min-width: 250px;
+  }
+  .mail-form__dropdown-radio-text {
+    font-size: 10px;
   }
 }
 
