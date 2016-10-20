@@ -3,18 +3,14 @@
 <head>
 	<!-- Meta -->
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>ALTHAIFARM</title>
 
 	<!-- Links -->
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flipclock.css">
 
-	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="js/flipclock.js"></script>
-    <script src="js/clock.js"></script>
 </head>
 <body>
 	<!-- Header -->
@@ -37,9 +33,7 @@
 						<br>заказали сегодня
 					</p>
 				</div>
-				<button class="nav-button">
-					закажите обратный звонок
-				</button>
+				<button class="nav-button">закажите обратный звонок</button>
 			</div>
 		</nav>
 		<!-- Title & subtitle -->
@@ -49,49 +43,51 @@
 	<main class="main">
 		<div class="main-wrapper">
 			<!-- Options -->
-			<ul class="main-options">
-				<li class="main-options__item"><p>Избавьтесь от боли в промежности, прямой кишке и яичках</p></li>
-				<li class="main-options__item">Восстановите нормальное мочеиспускание за 1 курс</li>
-				<li class="main-options__item">Снимите воспаление простаты</li>
-				<li class="main-options__item">Укрепите мужское сексуальное здоровье</li>
-			</ul>
+			<div class="main-options">
+				<p class="main-options__item">Избавьтесь от боли в промежности, прямой кишке и яичках</p>
+				<p class="main-options__item">Восстановите нормальное мочеиспускание за 1 курс</p>
+				<p class="main-options__item">Снимите воспаление простаты</p>
+				<p class="main-options__item">Укрепите мужское сексуальное здоровье</p>
+			</div>
 			<!-- Presentation -->
 			<div class="main-presentation">
 				<img src="img/prostodin.png" class="main-presentation__product" alt="Prostodin">
 			</div>
 			<!-- Order -->
 			<div class="main-order">
-				<div class="main-order__header">
-					<p>Количество товаров на <br> ближайшем к вам складе ограничено:</p>
-				</div>
-				<div class="main-order__price">
-					<div class="main-order__price-text">
-						<p>Полная цена:</p>
-						<p class="main-order__price-text--value">2990 <span class="small">руб.</span></p>
+				<div class="main-order__wrapper">
+					<div class="main-order__header">
+						<p>Количество товаров на <br> ближайшем к вам складе ограничено:</p>
 					</div>
-					<div class="main-order__price-sale">
-						<p>Цена со скидкой:</p>
-						<p class="main-order__price-sale--value">990 <span class="small">руб.</span></p>
+					<div class="main-order__price">
+						<div class="main-order__price-text">
+							<p>Полная цена:</p>
+							<p class="main-order__price-text--value">2990 <span class="small">руб.</span></p>
+						</div>
+						<div class="main-order__price-sale">
+							<p>Цена со скидкой:</p>
+							<p class="main-order__price-sale--value">990 <span class="small">руб.</span></p>
+						</div>
 					</div>
-				</div>
-				<!-- Timer -->
-				<div class="main-order__timer">
-					<p class="main-order__timer-title">До конца акции осталось:</p>
-					<div class="main-order__timer-clock"></div>
-					<p class="main-order__timer-text hours">Часов</p>
-					<p class="main-order__timer-text minutes">Минут</p>
-					<p class="main-order__timer-text seconds">Секунд</p>
-				</div>
-				<div class="main-order__buy">
-					<form class="main-order__buy-form" action="#">
-						<p>Введите Имя</p>
-						<img src="img/person.png" alt="male" class="main-order__buy-form-icon-1">
-						<input type="text" placeholder="Александр" class="main-order__buy-form-item">
-						<p class="main-order__buy-form-text">Введите номер телефона</p>
-						<img src="img/tel.png" alt="male" class="main-order__buy-form-icon-2">
-						<input type="tel" placeholder="+7 (__) ___-__-__" class="main-order__buy-form-item">
-					</form>
-					<button class="main-order__buy-button">Заказать со скидкой</button>
+					<!-- Timer -->
+					<div class="main-order__timer">
+						<p class="main-order__timer-title">До конца акции осталось:</p>
+						<div class="main-order__timer-clock"></div>
+						<p class="main-order__timer-text hours">Часов</p>
+						<p class="main-order__timer-text minutes">Минут</p>
+						<p class="main-order__timer-text seconds">Секунд</p>
+					</div>
+					<div class="main-order__buy">
+						<form class="main-order__buy-form" action="#">
+							<p>Введите Имя</p>
+							<img src="img/person.png" alt="male" class="main-order__buy-form-icon-1">
+							<input type="text" placeholder="Александр" class="main-order__buy-form-item">
+							<p class="main-order__buy-form-text">Введите номер телефона</p>
+							<img src="img/tel.png" alt="male" class="main-order__buy-form-icon-2">
+							<input type="tel" placeholder="+7 (__) ___-__-__" class="main-order__buy-form-item">
+						</form>
+						<button class="main-order__buy-button">Заказать со скидкой</button>
+					</div>
 				</div>
 			</div>
 		</div>

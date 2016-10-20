@@ -19,7 +19,7 @@
 }
 
 body {
-  background: url('../img/bg.png');
+  background: url('../img/bg_dark.png');
   background-repeat:no-repeat;
   -webkit-background-size:cover;
   -moz-background-size:cover;
@@ -28,6 +28,8 @@ body {
   background-position:center;
   font-family: "Segoe UI";
   cursor: default;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 ul {
@@ -61,6 +63,12 @@ a:visited {
   font-size: 17px;
 }
 
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
 /* ---------- Navigation ---------- */
 
 .nav {
@@ -70,8 +78,8 @@ a:visited {
 }
 
 .nav-wrapper {
-  width: 1000px;
-  margin: 0 auto;
+  width: 90%;
+  margin: 0 5%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -90,7 +98,7 @@ a:visited {
 /* ---------- Navigation Logo ---------- */
 
 .nav-logo {
-  flex: 35%;
+  flex: 30%;
   position: relative;
 }
 
@@ -135,7 +143,7 @@ a.nav-logo__link:before {
 /* ---------- Navigation Organic ---------- */
 
 .nav-organic {
-  flex: 15%;
+  flex: 20%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -221,8 +229,8 @@ a.nav-logo__link:before {
 /* ---------- Main List ---------- */
 
 .main-wrapper {
-  width: 1000px;
-  margin: 0 auto;
+  width: 90%;
+  margin: 0 5%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -232,16 +240,16 @@ a.nav-logo__link:before {
 }
 
 .main-options {
-  flex: 33%;
+  flex: 25%;
   position: relative;
 }
 
 .main-options__item {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 22px;
-  margin: 25px 0 50px 100px;
+  line-height: 20px;
+  margin: 60px 0 50px 100px;
 }
 
 .main-options__item:nth-child(1):before {
@@ -268,6 +276,7 @@ a.nav-logo__link:before {
   background: url("../img/options-3.png");
   display: block;
   position: absolute;
+  top: 270px;
   left: 10px;
   width: 52px;
   height: 65px;
@@ -278,6 +287,7 @@ a.nav-logo__link:before {
   background: url("../img/options-4.png");
   display: block;
   position: absolute;
+
   left: 9px;
   width: 64px;
   height: 66px;
@@ -287,30 +297,18 @@ a.nav-logo__link:before {
 /* ---------- Main Presentation ---------- */
 
 .main-presentation {
-  flex: 33%;
+  flex: 40%;
   position: relative;
 }
 
 .main-presentation:before {
   background: url("../img/sale.png");
   position: absolute;
-  top: -15px;
-  left: -25px;
+  top: -1%;
+  left: 5%;
   width: 157px;
   height: 135px;
   content: "";
-}
-
-.main-presentation:after {
-  position: absolute;
-  top: -2px;
-  left: 6px;
-  content: "Скидка";
-  color: red;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 40px;
-  text-transform: uppercase;
 }
 
 .main-presentation__product {
@@ -324,14 +322,17 @@ a.nav-logo__link:before {
 }
 
 /* ---------- Main Order Header ---------- */
-
 .main-order {
-  max-width: 305px;
+  flex: 30%;
+}
+
+.main-order__wrapper {
+  max-width: 291px;
   max-height: 446px;
-  flex: 28%;
   background-color: rgba(0,0,0,.6);
   border-radius: 9px 10px 10px 9px;
   padding: 10px 10px 20px 10px;
+  margin: 0 auto;
 }
 
 .main-order__header {
@@ -347,7 +348,7 @@ a.nav-logo__link:before {
   position: absolute;
   font-style: italic;
   top: -5px;
-  left: 220px;
+  left: 210px;
   color: #ffde00;
   font-size: 24px;
   font-weight: 700;
@@ -385,7 +386,7 @@ a.nav-logo__link:before {
 }
 
 .main-order__price-text {
-  flex: 40%;
+  flex: 35%;
   position: relative;
   color: white;
   line-height: 26px;
@@ -438,15 +439,16 @@ a.nav-logo__link:before {
   background: url("../img/border-2.png");
   position: absolute;
   top: 4px;
-  left: 197px;
+  left: 185px;
   width: 105px;
   height: 68px;
   content: "";
 }
 
 .main-order__price-sale--value {
-  font-size: 37px;
+  font-size: 30px;
   font-weight: 700;
+  margin-right: 1px;
 }
 
 /* ---------- Main Order Timer ---------- */
@@ -469,15 +471,6 @@ p.main-order__timer-title {
   font-weight: 600;
   line-height: 40px;
   font-style: italic;
-}
-
-.main-order__timer-clock {
-  display: flex;
-  position: absolute;
-  top: 25px;
-  left: 35px;
-  zoom: 0.5;
-  -moz-transform: scale(0.6);
 }
 
 .main-order__timer-text {
@@ -553,4 +546,243 @@ p.main-order__timer-title {
   top: 75px;
   left: -50px;
   content: "";
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .main-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .main-presentation {
+    text-align: center;
+  }
+
+  .main-options__item {
+    margin: 54px 0 -10px 100px;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1023px) {
+  .nav-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .nav-button {
+    flex: 15%;
+    font-size: 0.7em;
+    line-height: 20px;
+  }
+
+  .header-title {
+    font-size: 55px;
+  }
+
+  .header-subtitle {
+    font-size: 25px;
+  }
+
+  .main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .main-options {
+    display: none;
+  }
+
+  .main-presentation {
+    flex: 50%;
+    text-align: center;
+  }
+
+  .main-order {
+    flex: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 606px) and (max-width: 769px) {
+  .nav-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .nav-logo {
+    flex: 30%;
+  }
+
+  a.nav-logo__link {
+    font-size: 1em;
+  }
+
+  .nav-organic {
+    flex: 15%;
+  }
+
+  .nav-organic__text {
+    font-size: 0.5em;
+  }
+
+  .nav-ordered {
+    flex: 15%;
+  }
+  .nav-ordered__text{
+    font-size: 0.5em;
+  }
+
+  .nav-button {
+    flex: 5%;
+    font-size: 0.5em;
+    line-height: 15px;
+  }
+
+  .header-title {
+    font-size: 6vw;
+  }
+
+  .header-subtitle {
+    font-size: 3vw;
+    line-height: 1.5;
+  }
+
+  .main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    -o-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .main-options {
+    display: none;
+  }
+
+  .main-presentation {
+    flex: 45%;
+    text-align: center;
+  }
+
+  .main-presentation:before {
+    top: -2%;
+    left: 3%;
+  }
+
+  .main-order {
+    flex: 55%;
+    margin: 0 auto;
+  }
+
+  .main-order__buy-form-text:after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 605px) {
+  .nav-wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .nav-logo {
+    flex: 50%;
+  }
+
+  a.nav-logo__link {
+    font-size: 0.9em;
+  }
+
+  .nav-organic {
+    display: none;
+  }
+
+  .nav-ordered {
+    display: none;
+  }
+
+  .nav-button {
+  	max-width: 152px;
+    flex: 20%;
+    font-size: 0.5em;
+    line-height: 15px;
+  }
+
+  .header-title {
+    margin-top: 25px;
+    font-size: 7vw;
+    line-height: 1.5;
+  }
+
+  .header-subtitle {
+    font-size: 3vw;
+    line-height: 1.5;
+  }
+
+  .main-wrapper {
+    width: 100%;
+    margin: 0;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+
+  .main-options {
+    display: none;
+  }
+
+  .main-presentation {
+    flex: 100%;
+    text-align: center;
+  }
+
+  .main-presentation:before {
+    display: none;
+  }
+
+  .main-order {
+    flex: 100%;
+    margin: 0 auto;
+  }
+
+  .main-order__wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-order__buy-form-text:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  body {
+    display: none;
+    background: url(../img/sad.svg) no-repeat fixed 50% 50%;
+    -webkit-background-size: 150px;
+    background-size: 150px;
+  }
 }
