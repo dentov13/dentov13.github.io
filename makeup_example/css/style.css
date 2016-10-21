@@ -963,6 +963,14 @@ body {
   }
 }
 
+@media screen and (max-width: 319px) {
+  body {
+    display: none;
+    background: url(../img/sad.svg) no-repeat fixed 50% 50%;
+    -webkit-background-size: 150px;
+    background-size: 150px;
+  }
+
 
 
 
