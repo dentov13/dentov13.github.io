@@ -215,10 +215,12 @@ a.nav-logo__link:before {
   font-size: 62px;
   font-weight: 700;
   line-height: 52px;
-  margin: 15px 0 15px 0;
+  margin: 20px 0 20px 0;
 }
 
 .header-subtitle {
+  width: 85%;
+  margin: 0 auto;
   text-align: center;
   color: white;
   font-size: 30px;
@@ -256,6 +258,7 @@ a.nav-logo__link:before {
   background: url("../img/options-1.png");
   display: block;
   position: absolute;
+  bottom: 360px;
   left: 20px;
   width: 39px;
   height: 69px;
@@ -266,6 +269,7 @@ a.nav-logo__link:before {
   background: url("../img/options-2.png");
   display: block;
   position: absolute;
+  bottom: 260px;
   left: 0;
   width: 68px;
   height: 64px;
@@ -276,7 +280,7 @@ a.nav-logo__link:before {
   background: url("../img/options-3.png");
   display: block;
   position: absolute;
-  top: 270px;
+  bottom: 160px;
   left: 10px;
   width: 52px;
   height: 65px;
@@ -287,7 +291,7 @@ a.nav-logo__link:before {
   background: url("../img/options-4.png");
   display: block;
   position: absolute;
-
+  bottom: 75px;
   left: 9px;
   width: 64px;
   height: 66px;
@@ -451,42 +455,6 @@ a.nav-logo__link:before {
   margin-right: 1px;
 }
 
-/* ---------- Main Order Timer ---------- */
-
-.main-order__timer {
-  height: 80px;
-  background: url(../img/timer_bg.png) no-repeat;
-  margin-top: 18px;
-  color: white;
-  position: relative;
-}
-
-p.main-order__timer-title {
-  position: absolute;
-  top: -21px;
-  left: 52px;
-  text-align: center;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 40px;
-  font-style: italic;
-}
-
-.main-order__timer-text {
-  position: absolute;
-  top: 55px;
-  color: white;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 40px;
-  font-style: italic;
-}
-
-.hours {left:43px;}
-.minutes {left:120px;}
-.seconds {left:198px;}
-
 /* ---------- Main Order Buy ---------- */
 
 .main-order__buy-form {
@@ -559,12 +527,21 @@ p.main-order__timer-title {
     margin: 0 auto;
   }
 
+  .header-subtitle {
+  max-width: 950px;
+  margin: 0 auto;
+  }
+
   .main-presentation {
     text-align: center;
   }
 
   .main-options__item {
     margin: 54px 0 -10px 100px;
+  }
+
+  .main-order {
+    margin-top: 25px;
   }
 }
 
@@ -631,18 +608,18 @@ p.main-order__timer-title {
   }
 
   .nav-organic {
-    flex: 15%;
+    flex: 12%;
   }
 
   .nav-organic__text {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 
   .nav-ordered {
-    flex: 15%;
+    flex: 17%;
   }
   .nav-ordered__text{
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
 
   .nav-button {
@@ -720,9 +697,8 @@ p.main-order__timer-title {
   }
 
   .nav-button {
-  	max-width: 152px;
-    flex: 20%;
-    font-size: 0.5em;
+    flex: 5%;
+    font-size: 0.7em;
     line-height: 15px;
   }
 
@@ -730,10 +706,11 @@ p.main-order__timer-title {
     margin-top: 25px;
     font-size: 7vw;
     line-height: 1.5;
+    margin-bottom: 0;
   }
 
   .header-subtitle {
-    font-size: 3vw;
+    font-size: 4vw;
     line-height: 1.5;
   }
 
@@ -775,6 +752,10 @@ p.main-order__timer-title {
 
   .main-order__buy-form-text:after {
     display: none;
+  }
+
+  .main-order {
+    margin-bottom: 50px;
   }
 }
 
