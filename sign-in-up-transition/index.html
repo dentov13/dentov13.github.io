@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Sign In/Out Transition</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="">
+		<input id="sign-in" type="radio" value="sign-in" name="action" checked>
+		<label for="sign-in">Sign in</label>
+		<input id="sign-up" type="radio" value="sign-up" name="action">
+		<label for="sign-up">Sign up</label>
+		<input id="reset" type="radio" value="reset" name="action">
+		<label for="reset">Reset</label>
+		<div id="wrapper">
+			<div id="arrow"></div>
+			<input id="email" placeholder="E-mail" type="text">
+			<input id="pass" placeholder="Password" type="password">
+			<input id="c-pass" placeholder="Confirm password" type="password">
+		</div>
+		<button>
+			<span>
+				Reset password
+				<br>
+				Sign In
+				<br>
+				Sign Up
+			</span>
+		</button>
+	</form>
+	<div id="hint">Click on the tabs</div>
+</body>
+</html>
