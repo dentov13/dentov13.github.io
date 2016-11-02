@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	background: crimson;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+}
+div:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 55px;
+	color: white;
+}
