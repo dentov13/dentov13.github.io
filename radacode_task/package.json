@@ -1,0 +1,23 @@
+{
+  "name": "radacode_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dentov13/radacode_task.git"
+  },
+  "author": "DT",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dentov13/radacode_task/issues"
+  },
+  "homepage": "https://github.com/dentov13/radacode_task#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
