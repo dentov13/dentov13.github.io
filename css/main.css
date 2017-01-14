@@ -221,7 +221,7 @@ html body a:focus {
   }
 }
 @media screen and (max-width: 650px) {
-  .contacts-container a:first-child {
-    font-size: 0.8rem;
+  .contacts-container a:first-child i {
+    display: none;
   }
 }
