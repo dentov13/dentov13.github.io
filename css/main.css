@@ -1,24 +1,222 @@
-body {
-	margin: 0;
-	padding: 0;
+/* --- Adjustment --- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-div {
-	background: crimson;
-	text-align: center;
-	width: 100vw;
-	height: 100vh;
-}
-div:before {
-	content: "";
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
+html {
+  height: 100%;
+  font-size: 16px;
 }
 
-span {
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 55px;
-	color: white;
+html body {
+  height: 100%;
+  background: tomato;
+  font-family: 'Coda', cursive;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+html body h1 {
+  margin: 0;
+}
+
+html body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+html body a {
+  color: white;
+  text-decoration: none;
+}
+
+html body a:focus {
+  outline: none;
+}
+
+/* --- Content --- */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .header {
+  text-align: center;
+}
+
+.container .main .row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .main .row .main__about {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 1rem;
+  text-align: justify;
+}
+
+.container .main .row .main__about p {
+  font-size: 1.15rem;
+  line-height: 2.3rem;
+  min-height: 10rem;
+}
+
+.container .main .row .main__contacts {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container .main .row .main__contacts h3 {
+  text-align: left;
+}
+
+.container .main .row .main__contacts .contacts-container {
+  font-weight: bold;
+  min-height: 10rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.container .main .row .main__contacts i {
+  margin: 0.5rem;
+}
+
+.container .main .row .main__contacts .socials {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  border: 1px solid white;
+  -webkit-border-radius: 0.5rem;
+          border-radius: 0.5rem;
+}
+
+.container .main .row .main__contacts .socials li {
+  width: 20%;
+}
+
+.container .main .main__works {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .main .main__works .thumbnail {
+  width: 30%;
+  cursor: pointer;
+}
+
+.container .main .main__works .thumbnail a > .thumbnail__img {
+  width: 100%;
+  height: 60%;
+  margin: auto;
+  -webkit-border-radius: 0.5rem;
+          border-radius: 0.5rem;
+}
+
+.container .main .main__works .thumbnail a > .special {
+  height: 50%;
+}
+
+.container .main .main__works .thumbnail a > .tomato {
+  border: 1px solid white;
+}
+
+.container .main .main__works .thumbnail h4 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.container .main .main__works .thumbnail p {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 767px) {
+  html {
+    font-size: 9px;
+  }
+  .container .main .row .main__contacts .contacts-container {
+    min-height: 9rem;
+  }
+  .thumbnail {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 519px) {
+  html {
+    font-size: 6px;
+  }
+  .thumbnail {
+    margin-top: 2rem;
+  }
+  .container .main .main__works .thumbnail h4 {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contacts-container {
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  body {
+    display: none;
+  }
 }
