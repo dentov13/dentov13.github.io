@@ -19,7 +19,7 @@ var my_news = [
 
 window.ee = new EventEmitter();
 
-// ==== COMPONENTS ====
+// ==== Article ====
 var Article = React.createClass({
   propTypes: {
     data: React.PropTypes.shape({
@@ -61,6 +61,7 @@ var Article = React.createClass({
   }
 });
 
+// ==== NEWS ====
 var News = React.createClass({
   propTypes: {
     data: React.PropTypes.array.isRequired
@@ -99,6 +100,7 @@ var News = React.createClass({
   }
 });
 
+// ==== ADD ====
 var Add = React.createClass({
   getInitialState: function() {
     return {
@@ -176,6 +178,7 @@ var Add = React.createClass({
   }
 })
 
+// ==== APP ====
 var App = React.createClass({
   getInitialState: function() {
     return {
