@@ -150,6 +150,7 @@ html body a:focus {
 
 .container .main .main__works .thumbnail {
   width: 30%;
+  margin: 20px 0;
 }
 
 .container .main .main__works .thumbnail a > .thumbnail__img {
