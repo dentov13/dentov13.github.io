@@ -1,2 +1,0 @@
-# althaifarm-makeup
-"ALTHAIFARM" makeup
