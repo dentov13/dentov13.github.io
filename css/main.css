@@ -150,15 +150,17 @@ html body a:focus {
 
 .container .main .main__works .thumbnail {
   width: 30%;
-  cursor: pointer;
 }
 
 .container .main .main__works .thumbnail a > .thumbnail__img {
   width: 100%;
-  height: 60%;
+  height: 75%;
   margin: auto;
   -webkit-border-radius: 0.5rem;
           border-radius: 0.5rem;
+}
+.container .main .main__works .thumbnail a > .thumbnail__img.bordered {
+  border: 1px solid white;
 }
 
 .container .main .main__works .thumbnail a > .special {
