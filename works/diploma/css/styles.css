@@ -1,0 +1,97 @@
+/* allow map to fill viewport */
+html,
+body,
+#map-canvas,
+.container-fluid {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+li,
+li a,
+a:hover {
+    color: black;
+}
+
+/* form place */
+#form {
+    left: 20px;
+    top: 30px;
+    position: absolute;
+}
+
+/* about place */
+#about {
+    right: 30px;
+    top: 40px;
+    position: absolute;
+}
+
+/* text box */
+#q {
+    background-color: #ffffff !important;
+    width: 250px;
+}
+
+/* places label */
+.label {
+    color: #000000;
+    font-family: monospace;
+    font-size: small;
+    text-align: center;
+    width: 150px;
+    white-space: nowrap;
+}
+
+/* info window */
+.ajax {
+    margin: 0 10px 0 0;
+}
+
+.info {
+    overflow: auto;
+}
+
+/* typeahead.js */
+.tt-dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 6px 12px;
+    width: 250px;
+}
+.tt-suggestion.tt-cursor {
+    background-color: #0097cf;
+    color: #fff;
+    cursor: pointer;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+
+#weatherIcon {
+    width: 42px;
+    height: 42px;
+}
+
+.badge {
+    text-align: center;
+    background-color: #999;
+}
+
+.weatherInfo {
+    margin-left: 15px;
+}
+
+td {
+    padding-left: 10px;
+}
+
+p {
+    padding: 5px 0;
+}
